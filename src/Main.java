@@ -6,9 +6,14 @@
 public class Main {
 
     private final static byte M = 8; // amount of squares in each row and column
+
     public static void main(String[] args) {
 
-        Board board = new Board(M);
+        Board board = new Board(M); // creates an object of class Board
+
         System.out.println(board);
     }
+
+
+
 }

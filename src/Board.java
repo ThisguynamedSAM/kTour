@@ -1,12 +1,11 @@
 
 public class Board {
 
-    protected int [] [] b; // 2d array that holds demensions of the board
+    protected int [] [] b; // 2d array that holds dimensions of the board
 
     public Board(int m) {
         b = new int[m][m];
         reset( b );
-        printBoard( b );
     }
 
     public static void reset(int b[][]) {
@@ -39,15 +38,6 @@ public class Board {
             System.out.println( " --------------------------------- " );
             for (int j = 0; j < b[0].length; j++) {
                 if( j == 0) System.out.print( " | " );
-
-                if ( j == 0 && i == 0) {
-                    System.out.print("1 | ");
-                    continue;
-                }
-                if ( j == 7 && i == 7) {
-                    System.out.print("64|");
-                    continue;
-                }
                 System.out.print(b[i][j] + " | " );
             }
             System.out.print( "\n" );
