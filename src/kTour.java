@@ -1,4 +1,13 @@
 
+/**
+ * Group project 2
+ * Dr. Meyers
+ * Laguardia Community College
+ *
+ * This program completes the knights tour and prints the results
+ */
+
+
 public class kTour {
 
     private static int[] c_loc = { 0, 0 }; // array that will hold knights current location, starting at 0,0
@@ -87,5 +96,13 @@ public class kTour {
         else
             System.out.println("I- I- I.....just woke from sleep mode...");
         Board.printBoard( testBoard );
+    }
+
+    public static void main(String[] args) {
+
+//        Board board = new Board(M); // creates an object of class Board
+
+        start();
+        System.exit( 0 );
     }
 }
