@@ -18,6 +18,14 @@ public class Board {
             }
     }
 
+    public static void reset(int[][] b, int v) {
+
+        for(int i = 0; i < b[0].length; i++)
+            for(int j = 0; j < b[0].length; j++) {
+                b[i][j] = v;
+            }
+    }
+
     public static void printBoard(int b[][]) {
         // This method will print the board once the knights tour has been run
 
